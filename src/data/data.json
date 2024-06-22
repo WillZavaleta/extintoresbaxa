@@ -1,0 +1,30 @@
+[
+    {
+      "id": 1, 
+      "url": "slide1.jpg",
+      "title": "Extintores",
+      "body": "Te ofrecemos venta, recarga y mantenimiento de extintores de alta calidad.",
+      "link": "/venta-y-recarga-de-extintores"
+    },
+    {
+      "id": 2, 
+      "url": "slide2.jpg",
+      "title": "Equipo de Seguridad",
+      "body": "Contamos con equipo de seguridad contra incendios para salvaguardar tu propiedad.",
+      "link": "/venta-de-equipo-contra-incendios"
+    },
+    {
+      "id": 3, 
+      "url": "slide3.jpg",
+      "title": "Equipo de Protección",
+      "body": "Te ofrecemos productos de uso personal para proteger tu integridad física ante incendios.",
+      "link": "/venta-de-equipo-de-proteccion-personal"
+    },
+    {
+      "id": 4, 
+      "url": "slide4.jpeg",
+      "title": "Cursos",
+      "body": "Impartimos cursos certificados para saber actuar ante situaciones de emergencia.",
+      "link": "/cursos-de-capacitacion-en-emergencias"
+    }
+]

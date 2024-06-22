@@ -1,0 +1,26 @@
+[
+  {
+    "title": "HTML",
+    "imageSrc": "cliente1.png"
+  },
+  {
+    "title": "CSS",
+    "imageSrc": "cliente2.png"
+  },
+  {
+    "title": "React",
+    "imageSrc": "cliente3.png"
+  },
+  {
+    "title": "Node",
+    "imageSrc": "cliente4.png"
+  },
+  {
+    "title": "GraphQL",
+    "imageSrc": "cliente5.png"
+  },
+  {
+    "title": "MongoDB",
+    "imageSrc": "cliente6.png"
+  }
+]

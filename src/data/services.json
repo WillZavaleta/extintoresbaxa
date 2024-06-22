@@ -1,0 +1,42 @@
+[
+  {
+    "title": "Venta y Recarga de Extintores",
+    "imageSrc": "servicios1.jpg",
+    "description": "This is a project made to learn the latest languages by building an app.",
+    "skills": ["React", "Express", "Node"],
+    "link": "/venta-y-recarga-de-extintores",
+    "source": "https://www.github.com"
+  },
+  {
+    "title": "Venta de Equipo contra incendios",
+    "imageSrc": "servicios2.jpg",
+    "description": "This is a project made to learn the latest languages by building an app.",
+    "skills": ["React", "Express", "Node"],
+    "link": "/venta-de-equipo-contra-incendios",
+    "source": "https://www.github.com"
+  },
+  {
+    "title": "Venta de Equipo de Protección Personal",
+    "imageSrc": "servicios3.jpg",
+    "description": "This is a project made to learn the latest languages by building an app.",
+    "skills": ["React", "Express", "Node"],
+    "link": "/venta-de-equipo-de-proteccion-personal",
+    "source": "https://www.github.com"
+  },
+  {
+    "title": "Cursos de Capacitación en Emergencias",
+    "imageSrc": "servicios5.jpg",
+    "description": "This is a project made to learn the latest languages by building an app.",
+    "skills": ["React", "Express", "Node", "Sass"],
+    "link": "/cursos-de-capacitacion-en-emergencias",
+    "source": "https://www.github.com"
+  },
+  {
+    "title": "Servicios de Consultoría y Asesoramiento Ambiental",
+    "imageSrc": "servicios4.jpg",
+    "description": "This is a project made to learn the latest languages by building an app.",
+    "skills": ["React", "Express", "Node"],
+    "link": "/servicios-de-consultoria-y-asesoramiento-ambiental",
+    "source": "https://www.github.com"
+  }  
+]

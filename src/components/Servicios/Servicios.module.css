@@ -1,0 +1,32 @@
+
+.container {
+    padding-top: 100px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.title {
+    font-size: 35px;
+    color: #252525;
+    font-weight: 700;
+    letter-spacing: 1.75px;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.projects {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 37px;
+    gap: 15px;
+    width: 100%;
+}
+
+@media screen and (max-width: 830px) {
+    .title{
+        text-align: center;
+    }
+}
