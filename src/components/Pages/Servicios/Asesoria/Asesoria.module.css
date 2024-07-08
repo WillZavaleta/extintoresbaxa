@@ -1,0 +1,131 @@
+.container {
+    position: relative;
+   /* background: linear-gradient(180deg, #2e2d2d 0%, #ec2c2f 50%, #ec2c2f 100%);
+    border-radius: 15px;*/
+    padding: 73px;
+    margin-top: 129px;
+    z-index: 1;
+    margin-left: 10%;
+    margin-right: 10%;  
+    padding-top: 80px;
+}
+
+.title {
+    color: #252525;
+    font-size: 35px;
+    font-weight: 700;
+    letter-spacing: 1.75px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 70px;
+}
+
+.content2{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 70px;
+}
+
+.backBlur{
+    position: absolute;
+    width: 30vw;
+    height: 30vw;
+    left: 8vw;
+    background: rgba(220, 25, 27, 0.7);
+    filter: blur(100px);
+    z-index: -1;
+    transition: all 1s;
+}
+
+.backBlur2{
+    position: absolute;
+    width: 30vw;
+    height: 30vw;
+    left: 42vw;
+    background: rgba(220, 25, 27, 0.7);
+    filter: blur(100px);
+    z-index: -1;
+    transition: all 1s;
+}
+
+.aboutImage{
+    width: 50%;
+    margin: 30px;
+    border-radius: 10px;
+    /*background-color: rgba(220, 25, 27, 0.5);
+    filter: blur(100px);
+    background: linear-gradient(to bottom, rgba(255, 0, 0, 0) 30%, rgb(220, 25, 27)100%);
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    transition: all 0.6s;*/
+}
+/*.aboutImage:hover{
+    box-shadow: 0 0 25px 0 rgb(220, 25, 27);
+    background-color: rgba(220, 25, 27, 0.8);
+}*/
+
+.contenedorTexto{
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedorTexto h3{
+    color: #dc191b;
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: 1.75px;
+    text-transform: uppercase;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.textoAbout{
+    color: #252525;
+    font-size: 18px;
+    text-align: justify;
+}
+
+@media screen and (max-width: 830px) { 
+    .container{
+        margin-left: 0;
+        margin-right: 0;  
+        padding: 73px 30px 73px 30px;
+    }
+
+    .content {
+        flex-direction: column-reverse;
+    }
+
+    .content2 {
+        flex-direction: column-reverse;
+    }
+
+    .aboutImage{
+        width: 90%;
+    }
+
+    .backBlur{
+        left: 35vw;
+        background: rgba(220, 25, 27, 1);
+    }
+
+    .backBlur2{
+        left: 35vw;
+        background: rgba(220, 25, 27, 1);
+    }
+
+    .aboutImage{
+        width: 100%;
+    }
+}

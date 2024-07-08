@@ -33,11 +33,12 @@
 
 @media screen and (max-width: 830px) { 
     .titulo{
-        top: 50%;
-        left: 0;
+        top: 40%;
+        left: 10%;
         transform: translate(-50%, -25%);
         text-align: center;
-        width: 400px;
+        align-items: center;
+        width: 300px;
     }
 
     .titulo h1{

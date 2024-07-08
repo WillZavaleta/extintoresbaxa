@@ -9,6 +9,7 @@ import { Home } from './components/Home/Home'
 import { EquipoIncendios } from './components/Pages/Servicios/EquipoIncendios/EquipoIncendios'
 import { ProteccionPersonal } from './components/Pages/Servicios/ProteccionPeronal/ProteccionPersonal'
 import { Cursos } from './components/Pages/Servicios/Cursos/Cursos'
+import { Asesoria } from './components/Pages/Servicios/Asesoria/Asesoria'
 
 function App() {
 
@@ -25,6 +26,7 @@ function App() {
         <Route path="/venta-de-equipo-contra-incendios" element={<EquipoIncendios />}/>
         <Route path="/venta-de-equipo-de-proteccion-personal" element={<ProteccionPersonal />}/>
         <Route path="/cursos-de-capacitacion-en-emergencias" element={<Cursos />}/>
+        <Route path="/servicios-de-consultoria-y-asesoramiento-ambiental" element={<Asesoria />}/>
       </Routes>
     </div>
   )
