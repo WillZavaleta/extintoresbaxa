@@ -1,15 +1,15 @@
-import { Route, Routes } from 'react-router-dom'
-import { FloatingWhatsApp } from 'react-floating-whatsapp'
-import styles from './App.module.css'
-import { NosotrosPage } from './components/Pages/Nosotros/NosotrosPage'
-import { ServiciosPage } from './components/Pages/Servicios/ServiciosPage'
-import { ContactoPage } from './components/Pages/Contacto/ContactoPage'
-import { Extintores } from './components/Pages/Servicios/Extintores/Extintores'
-import { Home } from './components/Home/Home'
-import { EquipoIncendios } from './components/Pages/Servicios/EquipoIncendios/EquipoIncendios'
-import { ProteccionPersonal } from './components/Pages/Servicios/ProteccionPeronal/ProteccionPersonal'
-import { Cursos } from './components/Pages/Servicios/Cursos/Cursos'
-import { Asesoria } from './components/Pages/Servicios/Asesoria/Asesoria'
+import { Route, Routes } from 'react-router-dom';
+import { FloatingWhatsApp } from 'react-floating-whatsapp';
+import styles from './App.module.css';
+import { NosotrosPage } from './components/Pages/Nosotros/NosotrosPage';
+import { ServiciosPage } from './components/Pages/Servicios/ServiciosPage';
+import { ContactoPage } from './components/Pages/Contacto/ContactoPage';
+import { Extintores } from './components/Pages/Servicios/Extintores/Extintores';
+import { Home } from './components/Home/Home';
+import { EquipoIncendios } from './components/Pages/Servicios/EquipoIncendios/EquipoIncendios';
+import { ProteccionPersonal } from './components/Pages/Servicios/ProteccionPeronal/ProteccionPersonal';
+import { Cursos } from './components/Pages/Servicios/Cursos/Cursos';
+import { Asesoria } from './components/Pages/Servicios/Asesoria/Asesoria';
 
 function App() {
 
