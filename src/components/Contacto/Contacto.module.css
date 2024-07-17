@@ -1,39 +1,52 @@
 .container {
+    position: relative;
     color: #fff;
     margin-top: 120px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    text-align: center;
     padding: 58px 10%;
     justify-content: space-evenly;
     width: 100%;
-    background: linear-gradient(180deg, #2e2d2d 0%, #ec2c2f 50%, #ec2c2f 100%);
+    background: #252525;
     gap: 50px;
     overflow: hidden;
 }
 
-.text{
-    width: 50%;
+.tiras {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+}
+
+.text {
+    text-align: center;
 }
 
 .text h2 {
     font-size: 70px;
     font-weight: 700;
     letter-spacing: 4px;
+    color: #ec2c2f;
 }
 
 .text p {
     font-size: 40px;
     font-weight: 400;
     letter-spacing: 2px;
-    text-align: left;
+    text-align: center;
+    color: #ec2c2f;
 }
 
 .links {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: row;
+    text-align:center;
+    justify-content: center;
     list-style: none;
     gap: 26px;
+    margin-bottom: 340px;
 }
 
 .link {
@@ -42,24 +55,26 @@
     gap: 25px;
 }
 
-.link a{
+.link a {
     color: var(--color-text);
     text-decoration: none;
-    font-size: 30px;
-    font-weight: 400;
+    font-size: 20px;
+    font-weight: 200;
     letter-spacing: 1.5px;
 }
 
-.marca{
-    position:absolute;
-    background: #252525;
+.marca {
+    position: absolute;
+    /*background: linear-gradient(180deg, #2e2d2d 0%, #ec2c2f 50%, #ec2c2f 100%);*/   
+    background: #ec2c2f; 
     height: 70px;
     width: 100%;
-    color:#fff;
+    color: #fff;
     text-align: center;
-    
+
 }
-.marca p{
+
+.marca p {
     margin-top: 30px;
 }
 
@@ -68,14 +83,17 @@
         flex-direction: column;
         gap: 23px
     }
+
     .text {
         display: flex;
         flex-direction: column;
-        align-items:  center;
+        align-items: center;
     }
 
     .links {
+        flex-direction: column;
         align-items: center;
+        margin-bottom: 80px;
     }
 
     .link {
@@ -85,7 +103,7 @@
         text-align: center;
     }
 
-    .text{
+    .text {
         width: 100%;
     }
 
@@ -93,5 +111,5 @@
         text-align: center;
     }
 
-    
+
 }

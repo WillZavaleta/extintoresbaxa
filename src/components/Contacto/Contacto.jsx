@@ -5,6 +5,8 @@ import email from '../../../assets/emailIcon.png'
 import telefono from '../../../assets/telefonoIcon.png'
 import pin from '../../../assets/pinIcon.png'
 import facebook from '../../../assets/faceIcon.png'
+import tiras from '../../../assets/tiras_small.png'
+
 import 'animate.css';
 
 export const Contacto = () => {
@@ -44,15 +46,15 @@ export const Contacto = () => {
                     </li>
                     <li ref={objetoAnimar} className={`${styles.link} ${animar && 'animate__animated animate__fadeInRight animate__delay-1s'}`}>
                         <img src={facebook} alt="Facebook icon" />
-                        <a href="">facebook.com/myname</a>
+                        <a href="">ServiciosBaxa</a>
                     </li>
-                    <li ref={objetoAnimar} className={`${styles.link} ${animar && 'animate__animated animate__fadeInRight animate__delay-1s'}`}>
+                   {/* <li ref={objetoAnimar} className={`${styles.link} ${animar && 'animate__animated animate__fadeInRight animate__delay-1s'}`}>
                         <img src={pin} alt="Pin icon" />
                         <a href="https://maps.app.goo.gl/3wzLUHhyTBNgywDd9" target='_blank'>C. Nuevo León 412-Local 3, Progreso Macuiltepetl, 91018 Xalapa, Ver</a>
-                    </li>
-                </ul>
-
-            </footer>
+                    </li>*/}
+                </ul>   
+                <img className={styles.tiras} src={tiras} alt="" />    
+            </footer>            
             <div className={styles.marca}>
                 <p>Extintores BAXA | 2024</p>
             </div>
