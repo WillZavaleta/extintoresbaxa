@@ -4,6 +4,8 @@ import style from './ProteccionPersonal.module.css'
 import imgCabeza from '../../../../../assets/servicios3.jpg'
 import { Navbar } from '../../../Navbar/Navbar'
 import { Contacto } from '../../../Contacto/Contacto'
+import { motion } from 'framer-motion'
+import { fadeIn } from '../../../../variants'
 
 import proteccion1 from '../../../../../assets/proteccion1.png'
 import proteccion2 from '../../../../../assets/proteccion2.png'
@@ -19,19 +21,47 @@ export const ProteccionPersonal = () => {
     <Navbar />
 
     <section className={style.container} >
-        <h2 className={style.title}>Venta de Equipo de Protección Personal</h2>
-        <div className={style.content}>
+        <motion.h2 
+        variants={fadeIn("up", 0.2)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{once: false, amount: 0.7}}
+        
+        className={style.title}>Venta de Equipo de Protección Personal
+        </motion.h2>
+
+        
+        <motion.div 
+        variants={fadeIn("up", 0.2)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{once: false, amount: 0.7}}
+
+        className={style.content}>
 
             <p className={style.textoAbout}>
                 La seguridad de quienes combaten incendios es fundamental. En <strong>Extintores BAXA</strong>, ofrecemos equipos de protección personal de alta calidad, como trajes ignífugos, cascos y guantes, para garantizar la seguridad de tu equipo de respuesta contra incendios.
                 <br />
                 <br />
             </p>
-        </div>
+        </motion.div>
 
-        <h2 className={style.title}>Nuestros Productos</h2>
+        <motion.h2 
+        variants={fadeIn("up", 0.2)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{once: false, amount: 0.7}}
 
-        <div className={style.content2}>
+        className={style.title}>Nuestros Productos
+        </motion.h2>
+
+        <motion.div 
+        variants={fadeIn("right", 0.2)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{once: false, amount: 0.7}}
+
+        className={style.content2}>
             <div className={style.backBlur2}></div>
             <img src={proteccion1} alt="imagen extintores" className={style.aboutImage} />
             <div className={style.contenedorTexto}>
@@ -40,9 +70,15 @@ export const ProteccionPersonal = () => {
                 Estos trajes están diseñados específicamente para resistir altas temperaturas y proteger al usuario de quemaduras en caso de exposición al fuego.
                 </p>
             </div>
-        </div>
+        </motion.div>
 
-        <div className={style.content}>
+        <motion.div 
+        variants={fadeIn("left", 0.2)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{once: false, amount: 0.7}}
+
+        className={style.content}>
             <div className={style.backBlur}></div>
             <img src={proteccion2} alt="imagen vision" className={style.aboutImage} />
             <div className={style.contenedorTexto}>
@@ -51,9 +87,15 @@ export const ProteccionPersonal = () => {
                 Los cascos de bombero están diseñados para proporcionar protección contra golpes y caídas de objetos, así como para resistir altas temperaturas y llamas.
                 </p>
             </div>
-        </div>
+        </motion.div>
 
-        <div className={style.content2}>
+        <motion.div 
+        variants={fadeIn("right", 0.2)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{once: false, amount: 0.7}}
+
+        className={style.content2}>
             <div className={style.backBlur2}></div>
             <img src={proteccion3} alt="imagen about" className={style.aboutImage} />
             <div className={style.contenedorTexto}>
@@ -62,9 +104,15 @@ export const ProteccionPersonal = () => {
                 Los guantes ignífugos están hechos de materiales resistentes al calor y al fuego, y proporcionan protección para las manos del usuario durante la manipulación de objetos calientes o en llamas.
                 </p>
             </div>
-        </div>
+        </motion.div>
 
-        <div className={style.content}>
+        <motion.div 
+        variants={fadeIn("left", 0.2)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{once: false, amount: 0.7}}
+
+        className={style.content}>
             <div className={style.backBlur}></div>
             <img src={proteccion4} alt="imagen vision" className={style.aboutImage} />
             <div className={style.contenedorTexto}>
@@ -73,9 +121,15 @@ export const ProteccionPersonal = () => {
                 Las botas diseñadas para protección contra incendios suelen tener suelas resistentes al calor y al fuego, así como punteras de acero para proteger los pies del usuario de objetos pesados o afilados.
                 </p>
             </div>
-        </div>
+        </motion.div>
 
-        <div className={style.content2}>
+        <motion.div 
+        variants={fadeIn("right", 0.2)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{once: false, amount: 0.7}}
+
+        className={style.content2}>
             <div className={style.backBlur2}></div>
             <img src={proteccion5} alt="imagen about" className={style.aboutImage} />
             <div className={style.contenedorTexto}>
@@ -84,9 +138,15 @@ export const ProteccionPersonal = () => {
                 Las gafas de protección contra incendios están diseñadas para proteger los ojos del usuario de chispas, llamas y materiales volátiles durante la lucha contra incendios.
                 </p>
             </div>
-        </div>
+        </motion.div>
 
-        <div className={style.content}>
+        <motion.div 
+        variants={fadeIn("left", 0.2)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{once: false, amount: 0.7}}
+
+        className={style.content}>
             <div className={style.backBlur}></div>
             <img src={proteccion6} alt="imagen vision" className={style.aboutImage} />
             <div className={style.contenedorTexto}>
@@ -95,7 +155,7 @@ export const ProteccionPersonal = () => {
                 Las capuchas ignífugas proporcionan protección para la cabeza, el cuello y la cara del usuario contra el calor y las llamas, así como contra el humo y los productos químicos peligrosos.
                 </p>
             </div>
-        </div>
+        </motion.div>
 
     </section>
 

@@ -51,7 +51,7 @@ export const Slider = () => {
                 }
             </div>
             {/*<div className={styles.btnContainer}> */}
-            <a href="tel:2283556682" className={styles.btnContinuar}>Llamar Ahora!</a>
+            <a href="tel:2288113478" className={styles.btnContinuar}>Llamar Ahora!</a>
                 {/*<div className={styles.flecha}>&#9207;</div>*/} 
             {/*</div>*/}
             <div className={styles.carouselBoullt}>

@@ -3,6 +3,8 @@ import style from './Cursos.module.css'
 import imgCabeza from '../../../../../assets/servicios5.jpg'
 import { Navbar } from '../../../Navbar/Navbar'
 import { Contacto } from '../../../Contacto/Contacto'
+import { motion } from 'framer-motion'
+import { fadeIn } from '../../../../variants'
 
 import curso1 from '../../../../../assets/curso1.jpg'
 import curso2 from '../../../../../assets/curso2.jpg'
@@ -17,8 +19,22 @@ export const Cursos = () => {
             <Navbar />
 
             <section className={style.container} >
-                <h2 className={style.title}>Cursos de Capacitación en Emergencias</h2>
-                <div className={style.content}>
+                <motion.h2 
+                variants={fadeIn("up", 0.2)}
+                initial="hidden"
+                whileInView={"show"}
+                viewport={{once: false, amount: 0.7}}
+
+                className={style.title}>Cursos de Capacitación en Emergencias
+                </motion.h2>
+
+                <motion.div 
+                variants={fadeIn("up", 0.2)}
+                initial="hidden"
+                whileInView={"show"}
+                viewport={{once: false, amount: 0.7}}
+
+                className={style.content}>
 
                     <p className={style.textoAbout}>
                         En <strong>Extintores BAXA</strong>, ofrecemos cursos certificados de capacitación en emergencias diseñados para preparar a individuos y organizaciones para afrontar situaciones críticas con calma, eficacia y seguridad. Nuestros programas están diseñados y dictados por expertos en seguridad y respuesta a emergencias, y están adaptados para satisfacer las necesidades específicas de nuestros clientes.
@@ -51,11 +67,17 @@ export const Cursos = () => {
                         <br />                       
                         
                     </p>
-                </div>
+                </motion.div>
 
                 <h2 className={style.title}>Nuestros Cursos</h2>
 
-                <div className={style.content2}>
+                <motion.div 
+                variants={fadeIn("right", 0.2)}
+                initial="hidden"
+                whileInView={"show"}
+                viewport={{once: false, amount: 0.7}}
+                
+                className={style.content2}>
                     <div className={style.backBlur2}></div>
                     <img src={curso1} alt="imagen extintores" className={style.aboutImage} />
                     <div className={style.contenedorTexto}>
@@ -64,9 +86,15 @@ export const Cursos = () => {
                         Capacitación diseñada para enseñar a las personas a cómo identificar, manejar y utilizar correctamente extintores en caso de incendio. El objetivo principal de este curso es proporcionar a los alumnos las habilidades y la confianza necesarias para responder de manera efectiva y segura en situaciones de emergencia que involucren incendios.
                         </p>
                     </div>
-                </div>
+                </motion.div>
 
-                <div className={style.content}>
+                <motion.div 
+                variants={fadeIn("left", 0.2)}
+                initial="hidden"
+                whileInView={"show"}
+                viewport={{once: false, amount: 0.7}}
+
+                className={style.content}>
                     <div className={style.backBlur}></div>
                     <img src={curso2} alt="imagen vision" className={style.aboutImage} />
                     <div className={style.contenedorTexto}>
@@ -75,9 +103,15 @@ export const Cursos = () => {
                         Aprende las habilidades fundamentales para brindar primeros auxilios en una variedad de situaciones, incluyendo lesiones comunes, emergencias médicas y accidentes.
                         </p>
                     </div>
-                </div>
+                </motion.div>
 
-                <div className={style.content2}>
+                <motion.div 
+                variants={fadeIn("right", 0.2)}
+                initial="hidden"
+                whileInView={"show"}
+                viewport={{once: false, amount: 0.7}}
+                
+                className={style.content2}>
                     <div className={style.backBlur2}></div>
                     <img src={curso3} alt="imagen about" className={style.aboutImage} />
                     <div className={style.contenedorTexto}>
@@ -86,9 +120,15 @@ export const Cursos = () => {
                         Aprende a identificar y controlar incendios de manera segura, así como a planificar y ejecutar evacuaciones eficientes en caso de emergencia.
                         </p>
                     </div>
-                </div>
+                </motion.div>
 
-                <div className={style.content}>
+                <motion.div 
+                variants={fadeIn("left", 0.2)}
+                initial="hidden"
+                whileInView={"show"}
+                viewport={{once: false, amount: 0.7}}
+
+                className={style.content}>
                     <div className={style.backBlur}></div>
                     <img src={curso4} alt="imagen vision" className={style.aboutImage} />
                     <div className={style.contenedorTexto}>
@@ -97,9 +137,15 @@ export const Cursos = () => {
                         Desarrolla habilidades en técnicas de rescate y salvamento en diferentes entornos, incluyendo rescate en altura, en espacios confinados y en agua.
                         </p>
                     </div>
-                </div>
+                </motion.div>
 
-                <div className={style.content2}>
+                <motion.div 
+                variants={fadeIn("right", 0.2)}
+                initial="hidden"
+                whileInView={"show"}
+                viewport={{once: false, amount: 0.7}}
+                
+                className={style.content2}>
                     <div className={style.backBlur2}></div>
                     <img src={curso5} alt="imagen about" className={style.aboutImage} />
                     <div className={style.contenedorTexto}>
@@ -108,7 +154,7 @@ export const Cursos = () => {
                         Diseñamos y facilitamos simulacros de emergencia personalizados para empresas, instituciones educativas y comunidades, permitiendo a los participantes practicar sus habilidades en un entorno controlado.
                         </p>
                     </div>
-                </div>
+                </motion.div>
 
             </section>
 

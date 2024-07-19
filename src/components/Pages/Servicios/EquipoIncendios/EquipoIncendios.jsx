@@ -4,6 +4,8 @@ import style from './EquipoIncendios.module.css'
 import imgCabeza from '../../../../../assets/servicios2.jpg'
 import { Navbar } from '../../../Navbar/Navbar'
 import { Contacto } from '../../../Contacto/Contacto'
+import { motion } from 'framer-motion'
+import { fadeIn } from '../../../../variants'
 
 import equipo1 from '../../../../../assets/equipo1.png'
 import equipo2 from '../../../../../assets/equipo2.png'
@@ -18,19 +20,46 @@ export const EquipoIncendios = () => {
     <Navbar />
 
     <section className={style.container} >
-        <h2 className={style.title}>Venta de Equipo Contra Incendios</h2>
-        <div className={style.content}>
+        <motion.h2 
+        variants={fadeIn("up", 0.2)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{once: false, amount: 0.7}}
+
+        className={style.title}>Venta de Equipo Contra Incendios
+
+        </motion.h2>
+        <motion.div 
+        variants={fadeIn("up", 0.2)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{once: false, amount: 0.7}}
+
+        className={style.content}>
 
             <p className={style.textoAbout}>
                 En <strong>Extintores BAXA</strong>, nuestra prioridad es proporcionarte productos de calidad y un servicio excepcional. Nos dedicamos a ofrecerte una amplia gama de productos diseñados para salvaguardar vidas y propiedades en caso de emergencia. Desde extintores confiables hasta sistemas de detección de humo de última generación, estamos aquí para ayudarte a prepararte para cualquier eventualidad.
                 <br />
                 <br />
             </p>
-        </div>
+        </motion.div>
 
-        <h2 className={style.title}>Nuestros Productos</h2>
+        <motion.h2 
+        variants={fadeIn("up", 0.2)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{once: false, amount: 0.7}}
 
-        <div className={style.content2}>
+        className={style.title}>Nuestros Productos
+        </motion.h2>
+
+        <motion.div 
+        variants={fadeIn("right", 0.2)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{once: false, amount: 0.7}}
+
+        className={style.content2}>
             <div className={style.backBlur2}></div>
             <img src={equipo1} alt="imagen extintores" className={style.aboutImage} />
             <div className={style.contenedorTexto}>
@@ -39,9 +68,15 @@ export const EquipoIncendios = () => {
                 Estas pueden ser de diferentes tipos, como mangueras de incendio estándar o mangueras de incendio de alta presión.
                 </p>
             </div>
-        </div>
+        </motion.div>
 
-        <div className={style.content}>
+        <motion.div 
+        variants={fadeIn("left", 0.2)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{once: false, amount: 0.7}}
+
+        className={style.content}>
             <div className={style.backBlur}></div>
             <img src={equipo2} alt="imagen vision" className={style.aboutImage} />
             <div className={style.contenedorTexto}>
@@ -50,9 +85,15 @@ export const EquipoIncendios = () => {
                 Estos son gabinetes diseñados específicamente para almacenar extintores de incendios, protegiéndolos del polvo, la humedad y el daño accidental.
                 </p>
             </div>
-        </div>
+        </motion.div>
 
-        <div className={style.content2}>
+        <motion.div 
+        variants={fadeIn("right", 0.2)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{once: false, amount: 0.7}}
+
+        className={style.content2}>
             <div className={style.backBlur2}></div>
             <img src={equipo3} alt="imagen about" className={style.aboutImage} />
             <div className={style.contenedorTexto}>
@@ -61,9 +102,15 @@ export const EquipoIncendios = () => {
                 Esto incluye carteles, letreros y señales que indican la ubicación de los extintores, rutas de evacuación y otras medidas de seguridad contra incendios.
                 </p>
             </div>
-        </div>
+        </motion.div>
 
-        <div className={style.content}>
+        <motion.div 
+        variants={fadeIn("left", 0.2)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{once: false, amount: 0.7}}
+
+        className={style.content}>
             <div className={style.backBlur}></div>
             <img src={equipo4} alt="imagen vision" className={style.aboutImage} />
             <div className={style.contenedorTexto}>
@@ -72,9 +119,15 @@ export const EquipoIncendios = () => {
                 Estos dispositivos son fundamentales para alertar a las personas en caso de un incendio.
                 </p>
             </div>
-        </div>
+        </motion.div>
 
-        <div className={style.content2}>
+        <motion.div 
+        variants={fadeIn("right", 0.2)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{once: false, amount: 0.7}}
+
+        className={style.content2}>
             <div className={style.backBlur2}></div>
             <img src={equipo5} alt="imagen about" className={style.aboutImage} />
             <div className={style.contenedorTexto}>
@@ -83,7 +136,7 @@ export const EquipoIncendios = () => {
                  Equipado con suministros básicos de primeros auxilios para situaciones de emergencia.
                 </p>
             </div>
-        </div>
+        </motion.div>
 
     </section>
 

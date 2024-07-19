@@ -3,6 +3,8 @@ import style from './Extintores.module.css'
 import imgCabeza from '../../../../../assets/servicios1.jpg'
 import { Navbar } from '../../../Navbar/Navbar'
 import { Contacto } from '../../../Contacto/Contacto'
+import { motion } from 'framer-motion'
+import { fadeIn } from '../../../../variants'
 
 import extintores1 from '../../../../../assets/extintores1.png'
 import extintores2 from '../../../../../assets/extintores2.png'
@@ -16,8 +18,22 @@ export const Extintores = () => {
             <Navbar />
 
             <section className={style.container} >
-                <h2 className={style.title}>Venta y Recarga de Extintores</h2>
-                <div className={style.content}>
+                <motion.h2 
+                variants={fadeIn("up", 0.2)}
+                initial="hidden"
+                whileInView={"show"}
+                viewport={{once: false, amount: 0.7}}
+
+                className={style.title}>Venta y Recarga de Extintores
+                </motion.h2>
+
+                <motion.div 
+                variants={fadeIn("up", 0.2)}
+                initial="hidden"
+                whileInView={"show"}
+                viewport={{once: false, amount: 0.7}}
+
+                className={style.content}>
 
                     <p className={style.textoAbout}>
                         En <strong>Extintores BAXA</strong> proporcionamos servicios de recarga y mantenimiento para garantizar que los extintores estén en óptimas condiciones de funcionamiento, cumpliendo con los estándares de seguridad y regulaciones locales.
@@ -27,11 +43,24 @@ export const Extintores = () => {
                         <br />
                         <br />
                     </p>
-                </div>
+                </motion.div>
 
-                <h2 className={style.title}>Nuestros Productos</h2>
+                <motion.h2 
+                variants={fadeIn("up", 0.2)}
+                initial="hidden"
+                whileInView={"show"}
+                viewport={{once: false, amount: 0.7}}
 
-                <div className={style.content2}>
+                className={style.title}>Nuestros Productos
+                </motion.h2>
+
+                <motion.div 
+                variants={fadeIn("right", 0.2)}
+                initial="hidden"
+                whileInView={"show"}
+                viewport={{once: false, amount: 0.7}}
+
+                className={style.content2}>
                     <div className={style.backBlur2}></div>
                     <img src={extintores1} alt="imagen extintores" className={style.aboutImage} />
                     <div className={style.contenedorTexto}>
@@ -40,9 +69,15 @@ export const Extintores = () => {
                             Estos extintores son versátiles y efectivos para combatir incendios de clase A, B y C, que involucran materiales combustibles como madera, líquidos inflamables y equipos eléctricos energizados.
                         </p>
                     </div>
-                </div>
+                </motion.div>
 
-                <div className={style.content}>
+                <motion.div 
+                variants={fadeIn("left", 0.2)}
+                initial="hidden"
+                whileInView={"show"}
+                viewport={{once: false, amount: 0.7}}
+
+                className={style.content}>
                     <div className={style.backBlur}></div>
                     <img src={extintores2} alt="imagen vision" className={style.aboutImage} />
                     <div className={style.contenedorTexto}>
@@ -51,9 +86,15 @@ export const Extintores = () => {
                             Ideales para fuegos de clase B y C, los extintores de CO2 eliminan el oxígeno del fuego y son efectivos para apagar incendios en equipos eléctricos y líquidos inflamables sin dejar residuos químicos.
                         </p>
                     </div>
-                </div>
+                </motion.div>
 
-                <div className={style.content2}>
+                <motion.div 
+                variants={fadeIn("right", 0.2)}
+                initial="hidden"
+                whileInView={"show"}
+                viewport={{once: false, amount: 0.7}}
+
+                className={style.content2}>
                     <div className={style.backBlur2}></div>
                     <img src={extintores3} alt="imagen about" className={style.aboutImage} />
                     <div className={style.contenedorTexto}>
@@ -61,9 +102,15 @@ export const Extintores = () => {
                         <p className={style.textoAbout}>
                             Diseñados para incendios de clase A que implican materiales sólidos como madera, papel y textiles. Estos extintores utilizan agua presurizada para enfriar y extinguir el fuego.            </p>
                     </div>
-                </div>
+                </motion.div>
 
-                <div className={style.content}>
+                <motion.div 
+                variants={fadeIn("left", 0.2)}
+                initial="hidden"
+                whileInView={"show"}
+                viewport={{once: false, amount: 0.7}}
+
+                className={style.content}>
                     <div className={style.backBlur}></div>
                     <img src={extintores4} alt="imagen vision" className={style.aboutImage} />
                     <div className={style.contenedorTexto}>
@@ -71,7 +118,7 @@ export const Extintores = () => {
                         <p className={style.textoAbout}>
                         Adecuados para incendios de clase A y B, los extintores de espuma forman una capa sobre el combustible, sofocando las llamas y evitando su propagación.                        </p>
                     </div>
-                </div>
+                </motion.div>
 
             </section>
 
