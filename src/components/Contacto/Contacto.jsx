@@ -34,9 +34,9 @@ export const Contacto = () => {
 
     return (
         <div>
-            <footer id="contact" className={`${styles.container}`}>
+            <footer ref={objetoAnimar} id="contact" className={`${styles.container} ${animar2 && 'animate__animated animate__fadeInUp'}`}>
                 <div className={styles.text}>
-                    <h2 ref={objetoAnimar} className={`${animar && 'animate__animated animate__heartBeat'}`}>Contacto</h2>
+                    <h2 ref={objetoAnimar} className={`${animar && 'animate__animated animate__heartBeat animate__delay-1s'}`}>Contacto</h2>
                     <p>¿Necesitas asesoria? No dudes en contactarnos!</p>
                 </div>
                 <ul className={styles.links}>
