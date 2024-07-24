@@ -32,11 +32,11 @@
     "source": "https://www.github.com"
   },
   {
-    "title": "Servicios de Consultoría y Asesoramiento Ambiental",
+    "title": "Servicios de Consultoría Ambiental",
     "imageSrc": "servicios4.jpg",
     "description": "This is a project made to learn the latest languages by building an app.",
     "skills": ["React", "Express", "Node"],
-    "link": "/servicios-de-consultoria-y-asesoramiento-ambiental",
+    "link": "/servicios-de-consultoria-ambiental",
     "source": "https://www.github.com"
   }  
 ]

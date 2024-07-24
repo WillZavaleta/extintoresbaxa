@@ -15,7 +15,7 @@ function App() {
 
   return (
     <div className={styles.App}>
-       <FloatingWhatsApp phoneNumber={"+522283556682"} accountName={"Will"} statusMessage={"Normalmente responde en menos de 30 min"} chatMessage={"Hola! 🤝 \n Cómo puedo ayudarte?"} placeholder={"Escribe un mensaje"} darkMode={false} />
+       <FloatingWhatsApp phoneNumber={"+522284047502"} accountName={"BAXA"} statusMessage={"Normalmente responde en menos de 30 min"} chatMessage={"Hola! 🤝 \n Cómo puedo ayudarte?"} placeholder={"Escribe un mensaje"} darkMode={false} />
       
       <Routes>
         <Route path="/" element={<Home />}/>
@@ -26,7 +26,7 @@ function App() {
         <Route path="/venta-de-equipo-contra-incendios" element={<EquipoIncendios />}/>
         <Route path="/venta-de-equipo-de-proteccion-personal" element={<ProteccionPersonal />}/>
         <Route path="/cursos-de-capacitacion-en-emergencias" element={<Cursos />}/>
-        <Route path="/servicios-de-consultoria-y-asesoramiento-ambiental" element={<Asesoria />}/>
+        <Route path="/servicios-de-consultoria-ambiental" element={<Asesoria />}/>
       </Routes>
     </div>
   )

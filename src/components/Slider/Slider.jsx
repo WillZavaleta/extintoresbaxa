@@ -3,6 +3,7 @@ import { getImageUrl } from '../../utils'
 import styles from './Slider.module.css'
 import data from '../../data/data.json'
 import logo from '../../../assets/logo.png'
+import telefono from '../../../assets/telefono.png'
 import { NavLink } from 'react-router-dom'
 
 export const Slider = () => {
@@ -51,7 +52,11 @@ export const Slider = () => {
                 }
             </div>
             {/*<div className={styles.btnContainer}> */}
+            <div className={styles.containerBtn}>
+            <img src={telefono} alt="Telefono icon" />
             <a href="tel:2288113478" className={styles.btnContinuar}>Llamar Ahora!</a>
+            </div>
+            
                 {/*<div className={styles.flecha}>&#9207;</div>*/} 
             {/*</div>*/}
             <div className={styles.carouselBoullt}>

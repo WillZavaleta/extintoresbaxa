@@ -17,7 +17,7 @@ export const Asesoria = () => {
     
   return (
     <>
-            <Cabeza titulo={"Consultoría Ambiental"} image={imgCabeza} />
+            <Cabeza titulo={"Servicios de Consultoría Ambiental"} image={imgCabeza} />
             <Navbar />
 
             <section className={style.container} >
@@ -27,7 +27,7 @@ export const Asesoria = () => {
                 whileInView={"show"}
                 viewport={{once: false, amount: 0.7}}
                 
-                className={style.title}>Consultoría y Asesoramiento Ambiental
+                className={style.title}>Servicios de Consultoría Ambiental
 
                 </motion.h2>
                 <motion.div 
