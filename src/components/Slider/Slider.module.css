@@ -52,7 +52,7 @@
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
 }*/
-.containerBtn{
+.containerBtn {
     position: absolute;
     display: flex;
     flex-direction: row;
@@ -64,7 +64,7 @@
     top: 50%;
     left: 65%;
     transform: translate(-50%, -50%);
-    background-color: #dc191b;    
+    background-color: #dc191b;
     border-radius: 100px;
     padding: 17px 26px;
     box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
@@ -72,6 +72,22 @@
     animation-duration: 1.5s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
+}
+
+.containerBtn img {
+    z-index: 10;
+    width: 40px;
+}
+
+.btnContinuar {
+
+    text-decoration: none;
+    text-align: center;
+    color: #e9e7e7;
+    font-size: 28px;
+    font-weight: 600;
+
+
 }
 
 @keyframes floating {
@@ -86,23 +102,6 @@
     100% {
         transform: translate(0, -0px);
     }
-}
-
-
-.containerBtn img{
-    z-index: 10;
-    width: 40px;
-}
-
-.btnContinuar {
-    
-    text-decoration: none;
-    text-align: center;
-    color: #e9e7e7;
-    font-size: 28px;
-    font-weight: 600;
-   
-    
 }
 
 /*.flecha {
@@ -222,11 +221,14 @@ span.active {
         /*display: none;*/
         font-size: 20px;
         width: 290px;
+        height: 70px;
         text-align: center;
         align-items: center;
-        top: 25%;
-        left: 50%;
-        transform: translate(-50%, -25%) !important;
+        top: 140px;
+        left: 0;
+        right: 0; 
+        margin: auto;
+
     }
 
     .flecha {

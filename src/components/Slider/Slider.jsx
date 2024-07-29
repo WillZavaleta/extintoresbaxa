@@ -46,18 +46,18 @@ export const Slider = () => {
                     return <div key={id} className={`${styles.description} ${id === currentState ? styles.showText : styles.hideText}`}>
                         <h1>{item.title}</h1>
                         <p>{item.body}</p>
-                        <NavLink to={item.link} className={styles.link}>Ver Más</NavLink>     
+                        <NavLink to={item.link} className={styles.link}>Ver Más</NavLink>
                     </div>
                 })
                 }
             </div>
             {/*<div className={styles.btnContainer}> */}
             <div className={styles.containerBtn}>
-            <img src={telefono} alt="Telefono icon" />
-            <a href="tel:2288113478" className={styles.btnContinuar}>Llamar Ahora!</a>
+                <img src={telefono} alt="Telefono icon" />
+                <a href="tel:2288113478" className={styles.btnContinuar}>Llamar Ahora!</a>
             </div>
-            
-                {/*<div className={styles.flecha}>&#9207;</div>*/} 
+
+            {/*<div className={styles.flecha}>&#9207;</div>*/}
             {/*</div>*/}
             <div className={styles.carouselBoullt}>
                 {
