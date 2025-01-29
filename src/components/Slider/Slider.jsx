@@ -29,7 +29,7 @@ export const Slider = () => {
         backgroundPosition: 'center',
         backgroundSize: 'cover',
         height: '100%',
-        transition: '1s',
+        transition: '2s',
         filter: 'blur(0px)'
     }
     const goToNext = (id) => {
